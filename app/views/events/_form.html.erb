@@ -19,7 +19,7 @@
   <% if current_user.woman? %>
     <div class="mb-3">
     <%= f.label :only_woman %>
-    <%= f.check_box :only_woman, class: 'form-check' %>
+    <%= f.check_box :only_woman, {}, "true", "false" %>
   <% end %>
   <div class="mb-3">
     <%= f.label :thumbnail %>

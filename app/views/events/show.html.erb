@@ -6,6 +6,9 @@
           <div class="d-flex align-items-center">
             <div class="p-3">
               <h5 class="m-0">
+            <% if @event.only_woman==true%>
+              <h1>女性限定</h1>
+            <% end %>
                 <span class="badge bg-secondary">
                   <%= l @event.held_at.to_date, format: :short %>
                 </span>
